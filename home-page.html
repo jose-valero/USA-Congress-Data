@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="icon" href="https://imgur.com/ByiFHeA.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <title>HOME</title>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <div id="logo-mail" class="container">
+    <div class="row">
+      <div class="col-12 col-lg">
+        <header class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="https://imgur.com/ByiFHeA.jpg" class="d-inline-block align-middle" alt="logo TGIF" />
+            <h1 class="d-inline align-middle">TGIF</h1>
+          </a>
+          <div class="float-right">
+            <img src="https://imgur.com/B4hVAcv.jpg" class="d-inline-block align-middle" alt="icono email" />
+            <a class="d-inline align-middle" id="mail-underline" href="mailto:nysl@chisoccer.org">info@tgif.net</a>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+  <!-- /Encabezado -->
+
+  <!-- Menu -->
+  <div id=app>
+    <div class="container p-0 mb-5">
+      <nav id="menu">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="home-page.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Congress 113</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="house-page.html">House</a>
+              <a class="dropdown-item" href="senate-page.html">Senate</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Attendance</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="house-attendance.html">House</a>
+              <a class="dropdown-item" href="senate-attendance.html">Senate</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Party Loyalty</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="house-party-loyalty.html">House</a>
+              <a class="dropdown-item" href="senate-party-loyalty.html">Senate</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /Menu -->
+
+    <!--Text container-->
+    <div class="container pt-4 mb-4">
+      <img id="icono" src="https://imgur.com/Vtim2NF.jpg" alt=" icon right" />
+      <div class="col-8">
+        <h2 class="display-4">About Us</h2>
+        <p>
+          <span>&nbsp &nbsp</span>Openness, accountability, and honesty define
+          government transparency. In a free society, transparency is
+          government's obligation to share information with citizens. It is at
+          the heart of how citizens hold their public officials accountable.
+          Here at TGIF we believe that government should be transparent.
+        </p>
+        <p>
+          <span>&nbsp &nbsp</span>Governments exist to serve the people.
+          Information on how officials conduct the public business and spend
+          taxpayer money must be readily available and easily understood. This
+          transparency allows good and just governance. Transparency promotes
+          accountability and provides information for citizens about what their
+          Government is doing.
+        </p>
+        <p>
+          <span>&nbsp &nbsp</span>We also believe that government should be
+          participatory. Public engagement enhances the Government's
+          effectiveness and improves the quality of its decisions. Knowledge is
+          widely dispersed in society, and public officials benefit from having
+          access to that dispersed knowledge. We invite you to use our site to
+          become actively engaged in American government.
+        </p>
+
+        <a href="#readMore" v-on:click="showReadMethod">{{showReadMore ? "Read less" : "Read More"}}</a>
+
+        <div id="readMore" v-show=showReadMore>
+          <div class="card card-body">
+            <p>
+              <span>&nbsp &nbsp</span>TGIF works to disclose information in
+              forms that the public can readily find and use. We solicit public
+              feedback to identify information of greatest use to the public.
+            </p>
+            <h3>Background History of Government Transparency</h3>
+            <p>
+              <span>&nbsp &nbsp</span>In the West, the idea that government
+              should be open to public scrutiny and susceptible to public
+              opinion dates back at least to the time of the Enlightenment, when
+              many philosophes made an attack on absolutist doctrine of state
+              secrecy, a core part of their intellectual project. The passage of
+              formal legislative instruments to this end can also be traced to
+              this time with Sweden, for example, (which then included Finland
+              as a Swedish-governed territory) enacting free press legislation
+              as part of its constitution (Freedom of the Press Act, 1766). This
+              approach, and that of the philosophes more broadly, is strongly
+              related to recent historiography on the eighteenth-century public
+              sphere.
+            </p>
+            <p>
+              <span>&nbsp &nbsp</span>Influenced by Enlightenment thought, the
+              revolutions in America (1776) and France (1789), freedom of the
+              press enshrined provisions and requirements for public budgetary
+              accounting and freedom of the press in constitutional articles. In
+              the nineteenth century, attempts by Metternichean statesmen to row
+              back on these measures were vigorously opposed by a number of
+              eminent liberal politicians and writers, Bentham, Mill and Acton
+              prominent among the latter.
+            </p>
+            <p>
+              <span>&nbsp &nbsp</span>Open government is widely seen to be a key
+              hallmark of contemporary democratic practice and is often linked
+              to the passing of freedom of information legislation. Scandinavian
+              countries claim to have adopted the first freedom of information
+              legislation, dating the origins of its modern provisions to the
+              eighteenth century and Finland continuing the presumption of
+              openness after gaining independence in 1917, passing its Act on
+              Publicity of Official Documents in 1951 (superseded by new
+              legislation in 1999).
+            </p>
+            <p>
+              <span>&nbsp &nbsp</span>The United States passed its Freedom of
+              Information Act (FOIA) in 1966, FOIAs, Access to Information Acts
+              (AIAs) or equivalent laws were passed in Denmark and Norway in
+              1970.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/Text container-->
+
+  <!-- footer -->
+  <footer>
+    <div class="container mb-3 mt-3 pt-3 pb-3 ">
+      <div id="footer-styles" class="row text-center ">
+        <div class="col-12 col-lg ">
+          <p class="pt-2">© 2016 TGIF | All rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/funciones.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="assets/js/vueExample.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- /jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+
+</html>
