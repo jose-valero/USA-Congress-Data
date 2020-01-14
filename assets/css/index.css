@@ -1,0 +1,117 @@
+body {
+    font-family: 'Kalam', cursive;
+}
+
+#footer-styles {
+    background-color: #c0c0c3 !important;
+    border: 1px solid #696161 !important;
+    box-shadow: inset 0 0 2px 0px black !important;
+    text-shadow: 0 0 0px black !important;
+}
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+   
+  .spinner:before {
+      
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    border-top-color: yellow;
+    border-right-color:blue;
+    border-bottom-color:red;
+    animation: spinner .6s linear infinite;
+  }
+
+#logo-mail img {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+#mail-underline {
+    color: rgba(21, 223, 241, 0.883);
+    text-decoration-line: underline;
+}
+
+.underline-text th td {
+    color: rgba(21, 223, 241, 0.883);
+    text-decoration-line: underline;
+}
+
+.table-bordered thead th {
+    border: 2px solid black;
+}
+
+.table td {
+    width: 20%;
+    border: 2px solid black;
+}
+
+#logo-mail a h1 {
+    color: rgba(12, 13, 14, 0.616);
+
+}
+
+.container nav {
+    background-color: rgba(202, 202, 206, 0.5) !important;
+    border: 1px solid #696161 !important;
+    box-shadow: inset 0 0 0px 0px black !important;
+    text-shadow: 0 0 0 0px black !important;
+
+}
+
+.nav-link.dropdown-toggle {
+    color: rgba(12, 13, 14, 0.616) !important;
+
+}
+
+#menu .nav-link.active {
+    color: rgba(21, 223, 241, 0.883) !important;
+    border: 0px solid transparent;
+
+}
+
+.nav-link.dropdown-toggle:hover {
+    background-color: #afacac !important;
+
+}
+
+.dropdown-item:hover {
+    background-color: #afacac !important;
+
+}
+
+.container table {
+    font-size: 1rem;
+
+}
+
+#icono {
+    position: relative;
+    display: block;
+    float: right;
+    width: 350px;
+    height: 350px;
+    object-position: center;
+
+}
+
+#table1 {
+    border: 1px solid black
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    border: 0;
+    color: black;
+
+}
