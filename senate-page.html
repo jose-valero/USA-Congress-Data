@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="icon" href="https://imgur.com/ByiFHeA.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <title>SENATE</title>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <div id="logo-mail" class="container">
+    <div class="row">
+      <div class="col-12 col-lg">
+        <header class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="https://imgur.com/ByiFHeA.jpg" class="d-inline-block align-middle" alt="logo TGIF" />
+            <h1 class="d-inline align-middle">TGIF</h1>
+          </a>
+          <div class="float-right">
+            <img src="https://imgur.com/B4hVAcv.jpg" class="d-inline-block align-middle" alt="icono email" />
+            <a class="d-inline align-middle" id="mail-underline" href="mailto:nysl@chisoccer.org">info@tgif.net</a>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+  <!-- /Encabezado -->
+
+  <!-- Menu -->
+  <div class="container p-0 mb-5">
+    <nav id="menu">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="home-page.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Congress 113</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item " href="house-page.html">House</a>
+            <a class="dropdown-item" href="senate-page.html">Senate</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Attendance</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="house-attendance.html">House</a>
+            <a class="dropdown-item" href="senate-attendance.html">Senate</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Party Loyalty</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="house-party-loyalty.html">House</a>
+            <a class="dropdown-item" href="senate-party-loyalty.html">Senate</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- /Menu -->
+
+  <!--Paragraph-->
+  <div class="container pt-4 mb-4">
+    <h2 class="display-4">Senators</h2>
+    <p class="col-8">
+      <span>&nbsp &nbsp</span> First convened in 1789, the composition and
+      powers of the Senate are established in Article One of theU.S.
+      Constitution. Each state is represented by two senators, regardless of
+      population, who serve staggered six-year terms. The Senate has several
+      exclusive powers not granted to the House, including consenting to
+      treaties as a precondition to their ratification and consenting to or
+      confirming appointments of Cabinet secretaries, federal judges, other
+      federal executive officials, military officers, regulatory officials,
+      ambassadors, and other federal uniformed officers, as well as trial of
+      federal officials impeached by the House.
+    </p>
+  </div>
+  <!--/Paragraph-->
+
+  <!--Table container-->
+  <div id="app" class="container pt-4">
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Party</th>
+              <th>State</th>
+              <th>Seniority</th>
+              <th>Total votes</th>
+            </tr>
+          </thead>
+          <tbody class="spinner">
+            <tr v-for="senador in senate">
+              <td><a v-bind:href="senador.url" target='_blank'>{{getNombreSenador(senador)}}</a></td>
+              <td>{{senador.party}}</td>
+              <td>{{senador.state}}</td>
+              <td>{{senador.seniority}}</td>
+              <td>{{senador.votes_with_party_pct}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--/Table container-->
+
+  <!-- footer -->
+  <footer>
+    <div class="container mb-3 mt-3 pt-3 pb-3">
+      <div id="footer-styles" class="row text-center">
+        <div class="col-12 col-lg">
+          <p class="pt-2">© 2016 TGIF | All rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- Axion instead of fentch then Vuejs, jQuery, then Bootstrap JS -->
+  <script src="assets/js/funciones.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="assets/js/vueExample.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- /jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+
+</html>
